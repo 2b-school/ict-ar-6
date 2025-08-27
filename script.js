@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function () {
     
     let studentName = '';
     let answeredQuestions = 0;
-    const totalQuestions = 20; // تغيير من 25 إلى 40
+    const totalQuestions = 30; // تغيير من 25 إلى 40
 
     // Start Quiz Function
     function startQuiz() {
@@ -127,12 +127,13 @@ window.addEventListener('DOMContentLoaded', function () {
         if (score === totalQuestions) {
             resultDiv.className = 'success animate__animated animate__bounceIn';
             resultDiv.innerHTML = `
-                <h2><i class="fas fa-trophy"></i> تهانينا ${studentName}!</h2> 
-                <p>🎉 لقد حصلت على الدرجة النهائية: ${score}/${totalQuestions}</p> 
-                <p>أحسنت! لقد أظهرت فهمًا ممتازًا لأساسيات برنامج Scratch.</p> 
-                <p>هذا إنجاز رائع في بداية رحلتك في عالم البرمجة، استمر في الإبداع والتجربة.</p> 
-                <button id="tryAgain" class="btn btn-success"> 
-                    <i class="fas fa-redo"></i> حاول مرة أخرى 
+                <h2><i class="fas fa-trophy"></i> تهانينا ${studentName}!</h2>
+                <p>🎉 لقد حصلت على الدرجة النهائية: ${score}/${totalQuestions}</p>
+                <p>أحسنت! لقد أظهرت فهمًا ممتازًا لدروس مادة التكنولوجيا والاتصالات .</p> 
+                <p>هذا الإنجاز هو بداية رحلتك في عالم البرمجة والتكنولوجيا، استمر في الابتكار والتجربة.</p>
+
+                <button id="tryAgain" class="btn btn-success">
+                    <i class="fas fa-redo"></i> حاول مرة أخرى
                 </button>
             `;
             startCelebration();
@@ -140,9 +141,9 @@ window.addEventListener('DOMContentLoaded', function () {
             resultDiv.className = 'success animate__animated animate__fadeIn';
             resultDiv.innerHTML = `
                 <h2><i class="fas fa-thumbs-up"></i> جيد جدًا ${studentName}!</h2>
-                <p>🎯 درجتك: ${score}/${totalQuestions}</p> 
-                <p>أداء ممتاز، لكن يوجد بعض الأسئلة التي تحتاج مراجعة بسيطة.</p> 
-                <p>راجع المحاولة وجرّب مرة أخرى لتحصل على نتيجة أفضل في Scratch.</p> 
+                <p>🎯 درجتك: ${score}/${totalQuestions}</p>
+                <p>أداء جيد، لكن هناك بعض النقاط التي تحتاج إلى مراجعة.</p>
+                <p>راجع الأخطاء وحاول مرة أخرى لتحقيق نتيجة أفضل.</p>
                 <button id="tryAgain" class="btn btn-success">
                     <i class="fas fa-redo"></i> حاول مرة أخرى
                 </button>
